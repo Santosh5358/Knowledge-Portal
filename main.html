@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bod">
+    <nav class="nav">
+            <h2 style="margin-top: 4px;">Knowlodge Potal</h2>
+            <input type="text" placeholder="Search..." id="UserInput">
+            <div class="right1">
+                <button id="question_ask" class="button" onclick="document.getElementById('Ask_que').style.display='block'">Ask Question</button>
+                <button id="Logout" class="button" onclick="Logout()">Logout</button>
+            </div>
+    </nav>  
+
+    <!-- Qustion Ask by User -->
+
+    <div class="container" id="Ask_que">
+        <span onclick="document.getElementById('Ask_que').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h1 style="text-align: center;">Ask a Question</h1>
+
+        <form class="model-cont"  id="submitQuestion" >
+            <div class="loginCont">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" required><br>
+                <label for="question_tittle">Question Tittle:</label><br>
+                <input type="text" id="question_tittle" required><br>
+                <label for="question">Describe Question:</label><br>
+                <textarea id="question" rows="4" required></textarea><br>
+                <label for="image">Upload an Image:</label><br>
+                <input type="file" id="image" accept="image/*"><br>
+                <img id="imagePreview" alt="Image Preview" style="display: none;">
+                <button type="button" id="clearImage" style="display: none;">Clear Image</button>
+                <button class="button" type="submit">Add Question</button>
+            </div>
+        </form>
+    </div>
+<!-- Question's Show -->
+
+    <div id="questionsContainer">
+        <!-- <div class="questions">
+            <h2 >Why JavaScript?</h2>
+            <p class="username" style="position: relative;margin-top: -20px;margin-left: 5px;font-weight: 500;">Amit Kumar</p>
+            <p>
+              With JavaScript, you, as a developer, can access, read and manipulate
+              the parsed HTML code ("the DOM") to add additional behavior and features
+              to the page.
+            </p>
+            <p>For example, you can make the below button remove this text!</p>
+            <textarea name="" id="" cols="90" rows="2" placeholder="Type your Answer....."></textarea><br>
+            
+            <button>Submit Answer</button>
+        </div>
+        <div class="questions">
+            <h2>Why JavaScript?</h2>
+            
+            <p>
+              With JavaScript, you, as a developer, can access, read and manipulate
+              the parsed HTML code ("the DOM") to add additional behavior and features
+              to the page.
+            </p>
+            <p>For example, you can make the below button remove this text!</p>
+            <textarea name="" id="" placeholder="Type Your Answer...." cols="90" rows="2"></textarea><br>
+            
+            <button>Submit Answer</button>
+        </div>
+        <div class="questions">
+            <h2>Why JavaScript?</h2>
+            
+            <p>
+              With JavaScript, you, as a developer, can access, read and manipulate
+              the parsed HTML code ("the DOM") to add additional behavior and features
+              to the page.
+            </p>
+            <p>For example, you can make the below button remove this text!</p>
+            <textarea name="" id="" cols="90" placeholder="Type Your Answer...." rows="2"></textarea><br>
+             
+            <button>Submit Answer</button>
+        </div>
+        <div class="questions">
+            <h2>Why JavaScript?</h2>
+            
+            <p>
+              With JavaScript, you, as a developer, can access, read and manipulate
+              the parsed HTML code ("the DOM") to add additional behavior and features
+              to the page.
+            </p>
+            <p>For example, you can make the below button remove this text!</p>
+            <textarea name="" id="" cols="90" placeholder="Type Your Answer...." rows="2"></textarea><br>
+            
+            <button>Submit Answer</button>
+        </div>
+        <div class="questions">
+            <h2>Why JavaScript?</h2>
+            
+            <p>
+              With JavaScript, you, as a developer, can access, read and manipulate
+              the parsed HTML code ("the DOM") to add additional behavior and features
+              to the page.
+            </p>
+            <p>For example, you can make the below button remove this text!</p>
+            <textarea name="" id="" cols="90" placeholder="Type Your Answer...." rows="2"></textarea><br>
+            
+            <button>Submit Answer</button>
+        </div> -->
+    </div>
+   
+
+
+    <footer class="mainHtml">
+        &copy;2030 Minimal Website  <span class="linkBreak">|</span> Desing by  <a href="https://www.google.co.in/">Mr. Devil</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
